@@ -1,0 +1,32 @@
+Thưa thầy, trong git có 2 file chính, 1 file em mô phỏng blockchain trên java, còn file còn lại là cách hoạt động của trang web hiện chưa hoàn thiện phần giao diện ạ.
+Nó có những chức năng như sau:
+1) Import các modules và class:
+- Blockchain: class đại diện cho blockchain và bao gồm các phương thức để thêm giao dịch, đào (mine) khối và kiểm tra tính toàn vẹn của blockchain.
+- Transaction: class đại diện cho các giao dịch giữa các địa chỉ ví (wallet) trên blockchain.
+- EC: class đại diện cho thuật toán Elliptic Curve (EC) được sử dụng để tạo cặp khóa công khai và bí mật.
+- ec:  class EC sử dụng trong việc tạo khóa.
+
+2)Khởi tạo ví của người dùng:
+Tạo(private key) và tính (wallet address) dựa trên private key đã cho.
+Ví của người dùng là wallet .
+
+3) Tạo blockchain:
+Tạo một object Blockchain mới.
+
+4)Thực hiện giao dịch:
+- Tạo một giao dịch mới từ ví của người dùng đến một địa chỉ ví khác.
+- Ký giao dịch bằng private key để xác nhận người dùng thực sự đã tạo giao dịch này.
+- Thêm transaction vào danh sách các giao dịch đang chờ duyệt trên blockchain.
+
+5)Đào (mine):
+
+Thực hiện đào (mine) các transaction đang chờ duyệt vào một block mới.
+Block mới này sẽ được thêm vào chuỗi blockchain.
+
+6)Kiểm tra số dư:
+Kiểm tra số dư trong ví của người dùng bằng cách tính tổng các giao dịch liên quan đến địa chỉ ví của họ.
+
+7)Kiểm tra tính toàn vẹn của blockchain:
+Kiểm tra tính toàn vẹn của blockchain bằng cách kiểm tra mã hash của từng khối và đảm bảo rằng chuỗi khối không bị thay đổi hoặc bị giả mạo.
+
+Sau cùng là xuất ra kết quả số dư của ví của người dùng và thông báo về tính toàn vẹn của blockchain.
