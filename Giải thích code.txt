@@ -18,9 +18,8 @@ Tạo một object Blockchain mới.
 - Ký giao dịch bằng private key để xác nhận người dùng thực sự đã tạo giao dịch này.
 - Thêm transaction vào danh sách các giao dịch đang chờ duyệt trên blockchain.
 
-5)Đào (mine):
-
-Thực hiện đào (mine) các transaction đang chờ duyệt vào một block mới.
+5)Đào block hay xác nhận block:
+Thực hiện đào hay xác nhận các transaction đang chờ duyệt vào một block mới.
 Block mới này sẽ được thêm vào chuỗi blockchain.
 
 6)Kiểm tra số dư:
